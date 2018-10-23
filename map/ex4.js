@@ -52,7 +52,14 @@ Tableau de sortie correspondant (toFixed transforme les nombres en chaînes)
 */
 
 function getCirclesProperties(radiuses) {
+  return radiuses.map(radius => {
+    let circumference = (2 * Math.PI * radius ).toFixed(3);
+    let surface = (Math.PI * radius * radius ) .toFixed(3)
+    return {radius, circumference, surface}
+  })
 }
+
+console.log(getCirclesProperties([1, 3, 4.5, 7]))
 
 
 

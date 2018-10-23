@@ -23,7 +23,7 @@ const products = [
   }
 ];
 
-xdescribe('filter - exercice 4', () => {
+describe('filter - exercice 4', () => {
 
   test('filterOnPrice (price <= 500)', () => {
     expect(filterOnPrice(products, 500))
@@ -38,7 +38,7 @@ xdescribe('filter - exercice 4', () => {
       }
     ]);
   });
-  test('filterOnPrice (price <= 649)', () => {
+  xtest('filterOnPrice (price <= 649)', () => {
     expect(filterOnPrice(products, 649))
     .toEqual([
       {
